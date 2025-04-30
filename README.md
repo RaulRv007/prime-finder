@@ -38,7 +38,7 @@ Please insert number: 2131131137
 This number is divisible by: 46165
 this took 46163 steps
 ```
-  - **√2131131137 = 46164** This is almost equal to **46163**
+  - - **√2131131137 = 46164** This is almost equal to **46163**
   - I came up with this number by testing
   
 - **Range prime check (`checkInRange()`)**:  
