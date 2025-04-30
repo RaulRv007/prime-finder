@@ -44,7 +44,9 @@ prime = Prime(n)
 #run this to check one number
 
 print(prime.isPrime(n))
+print(f'This number is divisible by: {prime.prime_list[-1]}')
 print(f'this took {prime.counter} steps')
+
 
 # run this to check all numbers in a range
 #print(prime.checkInRange())

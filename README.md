@@ -30,6 +30,16 @@ This avoids checking unnecessary numbers and speeds up the process significantly
 - **Single prime check (`isPrime(n)`)**:  
   - Worst case: **O(√n)** — since it checks divisibility using primes up to `√n`.
   - Recursive prime discovery may increase overhead slightly but remains within the same asymptotic bound.
+  - The number 2131131137 is a proof of the effieciency of this algorithm (speedwise)
+  - The ourput when running this number was:
+```bash
+Please insert number: 2131131137
+(True, 2131131137)
+This number is divisible by: 46165
+this took 46163 steps
+```
+  - **√2131131137 = 46164** This is almost equal to **46163**
+  - I came up with this number by testing
   
 - **Range prime check (`checkInRange()`)**:  
   - Worst case: **O(n√n)** — for checking each number up to `n`, each requiring up to `√n` checks.
