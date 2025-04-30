@@ -1,3 +1,4 @@
+import math
 n = input('Please insert number: ')
 n = int(n)
 counter = 0
@@ -17,7 +18,7 @@ class Prime():
                 if self.counter == 0:
                     return (False, n, 'it is divisible by 5')
 
-        max_value = n / 2
+        max_value = math.sqrt(n)
         while self.counter < len(self.prime_list):
             current_prime = self.prime_list[self.counter]
             if n % current_prime == 0:
