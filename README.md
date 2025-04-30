@@ -35,7 +35,6 @@ This avoids checking unnecessary numbers and speeds up the process significantly
 ```bash
 Please insert number: 2131131137
 (True, 2131131137)
-This number is divisible by: 46165
 this took 46163 steps
 ```
   - - **√2131131137 = 46164** This is almost equal to **46163**

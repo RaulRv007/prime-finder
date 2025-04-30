@@ -15,8 +15,9 @@ class Prime():
         if self.counter == 0:
 
             if str(n)[-1] == '0' or str(n)[-1] == '5':
-                if self.counter == 0:
-                    return (False, n, 'it is divisible by 5')
+                if n != 5:
+                    if self.counter == 0:
+                        return (False, n, 'it is divisible by 5')
 
         max_value = math.sqrt(n)
         while self.counter < len(self.prime_list):
@@ -35,16 +36,19 @@ class Prime():
     def checkInRange(self):
         for i in range(0, self.n):
             self.counter = 0
+            self.sum_for_3 = 0
             self.primes.append(self.isPrime(i))
             
         return self.primes
 
 
 prime = Prime(n)
+
 #run this to check one number
 
 print(prime.isPrime(n))
-print(f'This number is divisible by: {prime.prime_list[-1]}')
+if not prime.isPrime(n)[0]:
+    print(f'This number is divisible by: {prime.prime_list[-1]}')
 print(f'this took {prime.counter} steps')
 
 
